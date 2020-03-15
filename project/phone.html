@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>诺视传播</title>
+    <link rel="shortcut icon" href="favicon.ico.ico" mce_href="favicon.ico" type="image/x-icon" />
+	<link rel="bookmark" href="favicon.ico.ico" mce_href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="favicon.ico.ico" mce_href="favicon.ico"  type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/phone.css">
+    <!-- <script type="text/javascript" src="js/judgePlatform.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/adaptive.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 18;
+        window['adaptive'].maxWidth = 720;
+        window['adaptive'].init();
+    </script>
+</head>
+<body>
+    <div class="phone-header">
+        <div class="phone-nav-btn">
+            <div class="phone-nav-menu" id="phone-nav-menu" onclick="showNavBar()">
+                <div class="nav-menu1"></div>
+                <div class="nav-menu2"></div>
+                <div class="nav-menu3"></div>
+            </div>
+            <div class="phone-nav-close" id="phone-nav-close" onclick="closeNavBar()" style="display: none;"></div>
+        </div>
+        <div class="phone-logo">
+            <img src="image/littleLogo.png">
+        </div>
+    </div>
+    <div class="phone-navbar" id="phone-navbar" style="display: none;">
+        <ul id="phone-navlist">
+            <li>首页</li>
+            <li>公司简介</li>
+            <li>业务范围</li>
+            <li>项目案例</li>
+            <li>服务客户</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+    <div class="swiper-container" id='phone-swiper'>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-hash="slide1">
+                <div class="swiper-container" id='phone-swiper1'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide phone-innerSwiper1">
+                            <p>公关活动管理服务商</p>
+                        </div>
+                        <div class="swiper-slide phone-innerSwiper2">
+                            <div class="phone-logoBox">
+                                <img src="image/logo.png" class="phone-logoImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide2">
+                <div class="phone-page2">
+                    <div class="phone-page2-top">
+                        <div class="phone-leftbox">WHO</div>
+                        <div class="phone-rightbox">
+                            <p><span>IS</span>NEXUS  &nbsp;MEDIA</p>
+                        </div>
+                    </div>
+                    <div class="phone-page2-bottom">
+                        诺视传播是一家专注于<br/>体验营销领域的活动管理服务商<br/>
+                        致力于为客户提供<br/>高度定制化、差异化整合营销解决方案<br/>
+                        旗下设立【公关活动】、【美陈空间】、【造文创】<br/>三大核心板块
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide3">
+                <div class="phone-page3">
+                    <div class="phone-page3-do">
+                        DO
+                    </div>
+                    <div class="phone-page3-top">
+                        <div class="phone-top-text">
+                            <p class="phone-event">EVENT</p>
+                            <div class="phone-eventClick">
+                                <p>EVENT</p>
+                                <p>公关活动</p>
+                                <p>以活动为载体，开展营销推广，提供个性化、专业化的服务提升客户的品牌、产品文化价值及策略</p>
+                            </div>
+                        </div>
+                        <img src="image/eventBG.png" class="phone-topBG">
+                    </div>
+                    <div class="phone-page3-mid">
+                        <div class="phone-mid-left">
+                            <div class="phone-mid-text">
+                                <p class="phone-display">DISPLAY</p>
+                                <div class="phone-displayClick">
+                                    <p>DISPLAY</p>
+                                    <p>美陈空间</p>
+                                    <p>致力于打造具有个性的品牌形象，将品牌价值转移到目标市场扩大品牌影响力和吸引力</p>
+                                </div>
+                            </div>
+                            <img src="image/displayBG.png" class="phone-midBG">
+                        </div>
+                    </div>
+                    <div class="phone-page3-bottom">
+                        <div class="phone-bottom-text">
+                            <p class="phone-zaolab">ZAOLAB</p>
+                            <div class="phone-zaolabClick">
+                                <p>ZAOLAB</p>
+                                <p>造文创</p>
+                                <p>通过新消费升级领域的创新创造，将创意融入到体验营销领域以社交娱乐方式重新处理客户的品牌和产品需求</p>
+                            </div>
+                        </div>
+                        <img src="image/zaolabBG.png" class="phone-bottomBG">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide4">
+                <div class="phone-page4">
+                    <div class="phone-anli-work">WORK</div>
+                    <div class="phone-anli1" onclick="phone_showMore(1)"></div>
+                    <div class="phone-anli2" onclick="phone_showMore(2)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide5">
+                <div class="phone-page5">
+                    <div class="phone-anli3" onclick="phone_showMore(3)"></div>
+                    <div class="phone-anli4" onclick="phone_showMore(4)"></div>
+                    <div class="phone-anli5" onclick="phone_showMore(5)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide6">
+                <div class="phone-page6">
+                    <div class="phone-anli6" onclick="phone_showMore(6)"></div>
+                    <div class="phone-anli7" onclick="phone_showMore(7)"></div>
+                    <div class="phone-anli8" onclick="phone_showMore(8)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide7">
+                <div class="phone-page5">
+                    <div class="phone-page5-title">CLIENT</div>
+                    <ul class="phone-page5-list">
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo1.png" style="width: 75%;height: 40%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo2.png" style="width: 95%;height: 35%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo4.png" style="width: 45%;height: 28%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo5.png" style="width: 85%;height: 35%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo3.png" style="width: 85%;height: 35%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo8.png" style="width: 60%;height: 28%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo9.png" style="width: 70%;height: 40%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo6.png" style="width: 85%;height: 50%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo12.png" style="width: 42%;height: 28%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo10.png" style="width: 78%;height: 28%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo11.png" style="width: 60%;height: 35%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                        <li>
+                            <img class="swiper-lazy" data-src="image/logo/logo7.png" style="width: 70%;height: 18%;"></img>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide8">
+                <div class="phone-page6">
+                    <div class="phone-page6-title">CONTACT</div>
+                    <div class="phone-inputBox">
+                        <div>
+                            <label>NAME</label><input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label>PHONE</label><input type="text" name="phone" id="phone">
+                        </div>
+                        <div>
+                            <label>E-MAIL</label><input type="text" name="email" id="email">
+                        </div>
+                        <div id="phone-msgBox">
+                            <div id="phone-msg">MESSAGE</div>
+                            <textarea id="phone-msgArea" name='message' style="display: none;"></textarea>
+                        </div>
+                        <div id="phone-sendBtn" style="cursor: pointer;" onclick="sendMsg()">SEND YOUR MESSAGE</div>
+                    </div>
+                    <div class="phone-contactBox">
+                        <P><span class="contactlogo"></span>concat@163.com</P>
+                        <p><span class="phonelogo"></span>(0755) 3284 3534</p>
+                        <p><span class="addresslogo"></span>深圳市南山区蛇口南海意库2栋3L<br/>广州市荔湾区芳村大道中183号3L</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div class="flexbg" style="display: none;">
+        <div class="swiper-container" id='phone-swiper2'>
+            <div class="phone-closeBtn"></div>
+            <div class="swiper-wrapper phone-anliDetail" id="phone-anliDetail">
+            </div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+    </div>
+    <div class="phone-alertBox" style="display: none;">
+            <p id="phone-alertText"></p>
+            <button type="button" id="qdBtn">确定</button>
+        </div>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/phone.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('#phone-swiper',{
+            direction: 'vertical',
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            hashNavigation: true,
+            lazy: true
+        })
+        var swiper1 = new Swiper('#phone-swiper1',{
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+            lazy: true
+        })
+        var swiper2 = new Swiper('#phone-swiper2',{
+            loop: true,
+            observer: true,
+            observeParents: true,
+            initialSlide: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            lazy: true
+        })
+        function showNavBar(){
+            $('#phone-nav-menu').hide()
+            $('#phone-nav-close').fadeIn()
+            $('#phone-navbar').fadeIn()
+        }
+        function closeNavBar(){
+            $('#phone-nav-close').hide()
+            $('#phone-nav-menu').fadeIn()
+            $('#phone-navbar').fadeOut()
+        }
+        $('#phone-navlist').on('click', 'li', function(){
+            var idx = $(this).index()
+            closeNavBar()
+            if(idx >= 4){
+                idx +=2
+            }
+            mySwiper.slideTo(idx, 500, false)
+        })
+
+        // slide3点击
+        $('.phone-page3-top').on('click', function(){
+            // if( $('.eventClick').is(":hidden"))
+            $('.phone-event').addClass('clickFadeOut')
+            $('.phone-eventClick').addClass('clickFadeIn')
+        })
+        $('.phone-mid-left').on('click', function(){
+            $('.phone-display').addClass('clickFadeOut')
+            $('.phone-displayClick').addClass('clickFadeIn')
+        })
+        $('.phone-page3-bottom').on('click', function(){
+            $('.phone-zaolab').addClass('clickFadeOut')
+            $('.phone-zaolabClick').addClass('clickFadeIn')
+        })
+
+        $('#phone-msg').on('click', function(){
+            $('#phone-msgArea').slideToggle()
+        })
+        $('.phone-closeBtn').on('click', function(){
+            $('.flexbg').hide()
+        })
+        $('#qdBtn').on('click', function(){
+            $('.phone-alertBox').hide()
+        })
+    </script>
+</body>
+</html>

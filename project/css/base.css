@@ -1,0 +1,114 @@
+*{margin: 0;padding: 0;color:#fff;}
+
+@font-face {
+	font-family: 'cnFontBold';
+	src: url('../font/SourceHanSansCN-Bold.eot');
+	src: url('../font/SourceHanSansCN-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../font/SourceHanSansCN-Bold.ttf') format('truetype'),
+	url('../font/SourceHanSansCN-Bold.woff') format('woff'),
+	url('../font/SourceHanSansCN-Bold.svg#cnFontBold') format('svg');
+}
+@font-face {
+	font-family: 'cnFontNormal';
+	src: url('../font/SourceHanSansCN-Normal.eot');
+	src: url('../font/SourceHanSansCN-Normal.eot?#iefix') format('embedded-opentype'),
+	url('../font/SourceHanSansCN-Normal.ttf') format('truetype'),
+	url('../font/SourceHanSansCN-Normal.woff') format('woff'),
+	url('../font/SourceHanSansCN-Normal.svg#cnFontNormal') format('svg');
+}
+@font-face {
+	font-family: 'cnFontLight';
+	src: url(../font/SourceHanSansCN-Light.eot);
+	src: url('../font/SourceHanSansCN-Light.eot?#iefix') format('embedded-opentype'),
+	url('../font/SourceHanSansCN-Light.ttf') format('truetype'),
+	url('../font/SourceHanSansCN-Light.woff') format('woff'),
+	url('../font/SourceHanSansCN-Light.svg#cnFontLight') format('svg');
+}
+@font-face {
+	font-family: 'cnFontEL';
+	src: url('../font/SourceHanSansCN-ExtraLight.eot');
+	src: url('../font/SourceHanSansCN-ExtraLight.eot?#iefix') format('embedded-opentype'),
+	url('../font/SourceHanSansCN-ExtraLight.ttf') format('truetype'),
+	url('../font/SourceHanSansCN-ExtraLight.woff') format('woff'),
+	url('../font/SourceHanSansCN-ExtraLight.svg#cnFontEL') format('svg');
+}
+@font-face {
+	font-family: 'engFont';
+	src: url('../font/nootype_-_radikal_bold-webfont.eot');
+	src: url('../font/nootype_-_radikal_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/nootype_-_radikal_bold-webfont.ttf') format('truetype'),
+	url('../font/nootype_-_radikal_bold-webfont.woff') format('woff'),
+	url('../font/nootype_-_radikal_bold-webfont.svg#engFont') format('svg');
+}
+@font-face {
+	font-family: 'engFontLight';
+	src: url('../font/nootype_-_radikal_light-webfont.eot');
+	src: url('../font/nootype_-_radikal_light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/nootype_-_radikal_light-webfont.ttf') format('truetype'),
+	url('../font/nootype_-_radikal_light-webfont.woff') format('woff'),
+	url('../font/nootype_-_radikal_light-webfont.svg#engFontLight') format('svg');
+}
+body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+	font-family: 'cnFontNormal';
+}
+ul li{list-style: none;}
+.header{width: 100%;position: relative;}
+.nav-btn{
+	position: fixed;
+	right: 0;
+	transform: translateY(0%) translateZ(0px);
+	z-index: 100;
+}
+.nav-menu{
+	margin: 28px 20px 0 0px;
+	width: 35px;
+	height: 22px;
+	cursor: pointer;
+}
+.nav-menu .nav-menu1, .nav-menu .nav-menu2, .nav-menu .nav-menu3{
+	background-color: #fff;
+	width: 35px;
+	height: 4px;
+}
+.nav-menu .nav-menu1{margin-bottom: 5px;}
+.nav-menu .nav-menu3{margin-top: 5px;}
+.navbar{
+	position: absolute;
+	width: 70%;
+	left: 15%;
+	top: 25px;
+	z-index: 99;
+}
+.navbar ul{font-size: 20px;color: #fff;font-family: 'cnFontEL'}
+.navbar ul li{
+	float: left;
+	width: 14.28%;
+	text-align: center;
+	cursor: pointer;
+}
+.rotateBtn{
+	animation-name: rotate;
+	-webkit-animation-name: rotate;
+	-moz-animation-name: rotate;
+	-ms-animation-name: rotate;
+	animation-duration:0.3s;
+	-webkit-animation-duration:0.3s;
+	-moz-animation-duration:0.3s;
+	-ms-animation-duration:0.3s;
+}
+@keyframes rotate{ to { transform: rotate(360deg); } }
+@-webkit-keyframes rotate{ to { transform: rotate(360deg); } }
+@-moz-keyframes rotate{ to { transform: rotate(360deg); } }
+@-o-keyframes rotate{ to { transform: rotate(360deg); } }
