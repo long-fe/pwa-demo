@@ -61,3 +61,21 @@ self.addEventListener('fetch', event => {
         })
     )
 })
+
+// offline 网络离线时触发
+self.addEventListener('offline', function() {
+    // 判断用户是否开启通知权限
+    Notification.requestPermission().then(grant => {
+        if (grant !== 'granted') {
+            return;
+        }
+        const notification = new Notification("哎呀", {
+            body: '您的网络貌似挂了，不过诺视传播官网可以照常访问哦~',
+            icon: '//lzw.me/images/avatar/lzwme-80x80.png'
+        });
+ 
+        notification.onclick = function() {
+            notification.close();
+        };
+    });
+});
