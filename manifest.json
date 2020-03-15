@@ -2,7 +2,7 @@
     "name": "诺视传播官网PWA",
     "short_name": "诺视传播",
     "start_url": "/project/phone.html",
-    "display": "fullscreen", 
+    "display": "standalone", 
     "scope": "/",
     "description": "pwa demo",
     "lang": "cn",
