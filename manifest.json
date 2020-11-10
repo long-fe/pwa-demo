@@ -1,7 +1,7 @@
 {
     "name": "诺视传播官网PWA",
     "short_name": "诺视传播",
-    "start_url": "/project/phone.html",
+    "start_url": "/phone.html",
     "display": "standalone", 
     "scope": "/",
     "description": "pwa demo",
@@ -11,32 +11,32 @@
     "background_color": "#000",
     "icons": [
         {
-            "src": "/project/image/icon/48x48.png",
+            "src": "/image/icon/48x48.png",
             "sizes": "48x48",
             "type": "image/png"
         },
         {
-            "src": "/project/image/icon/64x64.png",
+            "src": "/image/icon/64x64.png",
             "sizes": "64x64",
             "type": "image/png"
         },
         {
-            "src": "/project/image/icon/72x72.png",
+            "src": "/image/icon/72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "/project/image/icon/96x96.png",
+            "src": "/image/icon/96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/project/image/icon/144x144.png",
+            "src": "/image/icon/144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/project/image/icon/192x192.png",
+            "src": "/image/icon/192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         }

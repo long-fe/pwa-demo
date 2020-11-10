@@ -6,7 +6,7 @@
 const CACHE_VERSION = "cache_v1.0";
 // 需要缓存的资源
 const cacheResource = [
-    '/project/phone.html',
+    '/phone.html',
 ];
  
 // self 为当前 scope 内的上下文
