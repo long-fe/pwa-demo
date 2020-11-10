@@ -7,7 +7,7 @@ window.addEventListener('load', async e => {
     if ('serviceWorker' in navigator) {
         try {
             // 注册serviceWorker到sw.js文件中
-            navigator.serviceWorker.register('/sw.js', {scope: '/'});
+            navigator.serviceWorker.register('/sw.js');
             console.log('SW registered');
         } catch (error) {
             console.log('SW reg failed');
